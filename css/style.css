@@ -1,0 +1,12 @@
+* {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+	font-size: inherit;
+}
+
+body {
+	max-width: 80ch;
+	margin: 3rem;
+}
