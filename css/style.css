@@ -1,3 +1,21 @@
+:root {
+	--background-color: #eee;
+	--body-color: #111;
+	--link-color: #06c;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #111;
+		--body-color: #eee;
+		--link-color: deepskyblue;
+	}
+
+	.logo {
+		filter: invert(1);
+	}
+}
+
 * {
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -7,6 +25,38 @@ h1 {
 }
 
 body {
+	background-color: var(--background-color);
+	color: var(--body-color);
 	max-width: 80ch;
-	margin: 3rem;
+	margin: 3rem auto;
+	text-align: center;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.logo {
+	display: block;
+	height: 10rem;
+	margin: 1rem auto;
+}
+
+nav {
+	margin: 2rem auto;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	padding: 0.5em;
+	border: 2px solid var(--body-color);
 }
