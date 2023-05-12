@@ -96,3 +96,14 @@ nav a {
 	padding: 0.5em;
 	border: 2px solid var(--body-color);
 }
+
+@media screen and (max-width: 600px) {
+	nav ul li {
+		display: block;
+		margin: 1.5rem 0;
+	}
+
+	nav a {
+		border: none;
+	}
+}
