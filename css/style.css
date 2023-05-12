@@ -20,21 +20,30 @@
 	font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {
-	font-size: inherit;
-}
-
 body {
 	background-color: var(--background-color);
 	color: var(--body-color);
-	max-width: 80ch;
+	max-width: 60ch;
 	margin: 3rem auto;
 	text-align: center;
+}
+
+h1,
+h2 {
+	font-size: inherit;
+}
+
+p {
+	text-align: justify;
 }
 
 a {
 	color: var(--link-color);
 	text-decoration: none;
+}
+
+header {
+	margin-bottom: 3rem;
 }
 
 .logo {
